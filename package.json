@@ -14,5 +14,9 @@
     "@red-cup-engineering/computer-networking-engineering-services-section": "workspace:*",
     "@red-cup-engineering/weiqi-engine": "workspace:*",
     "@red-cup-engineering/signgraph": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/weiqi-content-validation-service.git"
   }
 }
