@@ -1,0 +1,24 @@
+{
+  "name": "@red-cup-engineering/weiqi-content-validation-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Executable validation and derivation tools over the scientific Weiqi corpus.",
+  "license": "MIT",
+  "scripts": {
+    "check-links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "^0.22.0",
+    "@red-cup-engineering/computer-code-engineering-services-section": "^0.2.1",
+    "@red-cup-engineering/weiqi-engine": "^0.3.4",
+    "@red-cup-engineering/signgraph": "^0.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/weiqi-content-validation-service.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
