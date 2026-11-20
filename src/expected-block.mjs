@@ -430,9 +430,9 @@ export function checkExpectedBlock({ fence, file, diagram, kernel }) {
         if (!mm || entry.kind !== "scalar") continue;
         const [, colorWord, coord] = mm;
         coordClaims.push({ coord, line: entry.line });
-        const verdictMatch = /^(legal|illegal)\b/i.exec(entry.value);
-        if (!verdictMatch) continue;
-        const claimedLegal = verdictMatch[1].toLowerCase() === "legal";
+        const resultMatch = /^(legal|illegal)\b/i.exec(entry.value);
+        if (!resultMatch) continue;
+        const claimedLegal = resultMatch[1].toLowerCase() === "legal";
         const rulesetMatches = [...entry.value.matchAll(/ruleset\.(\w+)/g)].map((m) => m[1]);
         const rulesetNames = rulesetMatches.length > 0 ? rulesetMatches : Object.keys(kernel.RULESETS);
         const color = colorWord === "black" ? kernel.BLACK : kernel.WHITE;
